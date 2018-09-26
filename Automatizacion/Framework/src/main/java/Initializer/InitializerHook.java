@@ -9,6 +9,7 @@ import Base.Base;
 import Base.DriverContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
@@ -26,7 +27,10 @@ public class InitializerHook extends Base {
 
             case "Chrome": {
                 System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
-                WebDriver driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--start-maximized");
+                options.addArguments("--disable-extensions");
+                WebDriver driver = new ChromeDriver(options);
                 DriverContext.setDriver(driver);
                 break;
             }
