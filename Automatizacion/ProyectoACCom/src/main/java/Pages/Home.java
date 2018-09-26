@@ -204,7 +204,7 @@ public class Home extends BasePage {
         selOld.selectByVisibleText(String.valueOf(mayor));
 
     }
-    
+    //comentario para git
     //Accion 5
     public void clickQuote(){
         getQuote().click();
