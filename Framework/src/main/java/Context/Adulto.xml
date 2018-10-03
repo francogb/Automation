@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<adulto>
+    <anio>anio</anio>
+    <apellido>apellido</apellido>
+    <dia>dia</dia>
+    <email>email</email>
+    <mes>mes</mes>
+    <nombre>nombre</nombre>
+    <telefono>telefono</telefono>
+</adulto>
