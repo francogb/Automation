@@ -9,28 +9,52 @@ import Context.Adulto;
 import java.io.File;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 /**
  *
  * @author Franco.Garcia
  */
 public class XMLHelper {
+
     public static Adulto adulto;
-    
+
+    public static void leerXml(String testName) {
+        try {
+            File file = new File("src/main/java/Context/" + testName + ".xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(Adulto.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            Adulto adult= (Adulto) jaxbUnmarshaller.unmarshal(file);
+            adulto= adult;
+        } catch (Exception ex) {
+            System.out.println("Paso algo leyendo el xml "+ ex.getMessage());
+        }
+    }
+
     public static void generarXml() {
-        try{
-        Adulto adult= new Adulto("nombre","apellido", "dia", "mes", "anio", "email", "telefono");
-        File file = new File("src/main/java/Context/Adulto.xml");
-        JAXBContext jaxbContext = JAXBContext.newInstance(Adulto.class);
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        jaxbMarshaller.marshal(adult, file);
-        jaxbMarshaller.marshal(adult, System.out);
-        }catch(Exception ex){
+        try {
+            Adulto adult = new Adulto("nombre", "apellido", "dia", "mes", "anio", "email", "telefono");
+            File file = new File("src/main/java/Context/Adulto.xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(Adulto.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            jaxbMarshaller.marshal(adult, file);
+            jaxbMarshaller.marshal(adult, System.out);
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
     }
     
-    
-    
+    public static void guardarXml(String testName){
+        try {
+            File file = new File("src/main/java/Context/" + testName + ".xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(Adulto.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            jaxbMarshaller.marshal(adulto, file);
+           
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }

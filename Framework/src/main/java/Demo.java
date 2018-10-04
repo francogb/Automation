@@ -2,6 +2,7 @@
 
 import Helpers.XMLHelper;
 import static Helpers.XMLHelper.generarXml;
+import static Helpers.XMLHelper.leerXml;
 import Log.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,6 +28,5 @@ public class Demo {
 //        
 //    }
     public static void main(String[] args){
-        generarXml();
     }
 }

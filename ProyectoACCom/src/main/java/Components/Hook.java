@@ -6,10 +6,13 @@
 package Components;
 
 import Initializer.InitializerHook;
+import static Initializer.InitializerHook.openConfiguration;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
+import org.junit.rules.TestName;
 
 /**
  *
@@ -18,16 +21,19 @@ import org.junit.BeforeClass;
 public class Hook extends InitializerHook{
     @BeforeClass
     public static void setUpClass(){
+        openConfiguration();
         openLogger();
     }
     
     @Before
     public void setUp(){
+        openContextData(testName.getMethodName());
         openBrowser();
     }
     
     @After
     public void tearDown(){
+        closeContextData(testName.getMethodName());
         closeBrowser();
     }
     
@@ -36,5 +42,6 @@ public class Hook extends InitializerHook{
         
     }
     
-    
+    @Rule
+    public TestName testName = new TestName();
 }

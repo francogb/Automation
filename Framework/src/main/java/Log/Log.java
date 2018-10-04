@@ -5,6 +5,7 @@
  */
 package Log;
 
+import Config.DataSetter;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
@@ -17,7 +18,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 public class Log {
     private static Logger logger = Logger.getLogger(Log.class.getName());
     public static void initializedLogger(){
-        DOMConfigurator.configure("src/log4j.xml");
+        DOMConfigurator.configure(DataSetter.configuration.getLog4ConfiguratorPath());
     }
     public static void startTestCase(String sTestCaseName){
         logger.info("start test: " + sTestCaseName);

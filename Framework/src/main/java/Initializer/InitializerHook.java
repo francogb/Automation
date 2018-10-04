@@ -7,9 +7,17 @@ package Initializer;
 
 import Base.Base;
 import Base.DriverContext;
+import static Base.DriverContext.getDriver;
+import Config.DataSetter;
+import static Config.DataSetter.getConfiguration;
+import Helpers.XMLHelper;
+import static Helpers.XMLHelper.guardarXml;
+import static Helpers.XMLHelper.leerXml;
 import Log.Log;
+import static Log.Log.initializedLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
@@ -23,10 +31,14 @@ public class InitializerHook extends Base {
     }
 
     public static void openBrowser() {
-        switch ("Chrome") {
+        String browserType = DataSetter.configuration.getBrowser();
+        switch (browserType) {
 
             case "Chrome": {
-                System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", DataSetter.configuration.getChromeDriverPath());
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--start-maximized");
+                options.addArguments("--disable-extensions");
                 WebDriver driver = new ChromeDriver();
                 DriverContext.setDriver(driver);
                 break;
@@ -40,10 +52,24 @@ public class InitializerHook extends Base {
         }
     }
     public static void closeBrowser(){
-        DriverContext.getDriver().close();
+        getDriver().close();
+        getDriver().quit();
     }
     
     public static void openLogger(){
-        Log.initializedLogger();
-    };
+        initializedLogger();
+    }
+    
+    public static void openConfiguration(){
+        getConfiguration();
+    }
+    
+    public static void openContextData(String testName){
+        leerXml(testName);
+    }
+    
+    public static void closeContextData(String testName){
+        guardarXml(testName);
+    }
+    
 }
