@@ -17,7 +17,7 @@ public class Cotizar extends BaseStep{
     
     public static void Run(){
         Log.startTestCase("Entra a la pagina");
-        navigateToSite();
+        
         Home home = new Home();
         currentPage = home.getInstance(Home.class);
         currentPage.As(Home.class).seleccionarDestino();
