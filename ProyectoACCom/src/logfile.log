@@ -1,19 +1,69 @@
-2018-10-03 16:50:42,788 INFO  [Log] start test: Entra a la pagina 
-2018-10-03 16:57:39,540 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 02:07:51,254 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 02:17:14,660 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 02:17:39,531 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 02:19:20,290 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 02:21:31,344 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 09:56:19,318 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 09:57:23,168 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:03:09,709 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:03:38,581 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:04:07,803 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:04:56,536 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:05:33,467 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:14:33,670 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:15:00,719 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:15:30,554 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:15:57,540 INFO  [Log] start test: Entra a la pagina 
-2018-10-04 10:16:24,639 INFO  [Log] start test: Entra a la pagina 
+
+2018-10-11 15:02:39,704 INFO  [Log] Start test: pruebaEnServer01 
+2018-10-11 15:02:39,705 INFO  [Log] 1. Ingresa al sitio: Pass 
+2018-10-11 15:02:39,985 INFO  [Log] 2. Selecciona destino: Pass 
+2018-10-11 15:02:40,602 INFO  [Log] 3. Selecciona fecha de inicio: Pass 
+2018-10-11 15:02:41,218 INFO  [Log] 4. Selecciona fecha de fin: Pass 
+2018-10-11 15:02:41,778 INFO  [Log] 5. Selecciona pasajero: Pass 
+2018-10-11 15:02:54,104 INFO  [Log] 6. Click en cotizar: Pass 
+2018-10-11 15:02:54,389 INFO  [Log] 7. Ingresa a Products: Pass 
+2018-10-11 15:02:54,504 INFO  [Log] 8. Selecciona un producto: Pass 
+2018-10-11 15:02:54,505 INFO  [Log] 9. Ingresa a Product: Pass 
+2018-10-11 15:02:57,798 INFO  [Log] 10. Selecciona un AddOn: Pass 
+2018-10-11 15:02:57,895 INFO  [Log] 11. Click en siguiente: Pass 
+2018-10-11 15:02:57,895 INFO  [Log] 12. Ingresa a Passengers: Pass 
+2018-10-11 15:03:02,322 INFO  [Log] 13. Carga los datos: Pass 
+2018-10-11 15:03:02,322 INFO  [Log] 14. Click en comprar: Pass 
+2018-10-11 15:03:02,323 INFO  [Log] End test: pruebaEnServer01
+ 
+2018-10-11 15:03:14,007 INFO  [Log] Start test: pruebaEnACCom 
+2018-10-11 15:03:14,007 INFO  [Log] 1. Ingresa al sitio: Pass 
+2018-10-11 15:03:14,247 INFO  [Log] 2. Selecciona destino: Pass 
+2018-10-11 15:03:14,842 INFO  [Log] 3. Selecciona fecha de inicio: Pass 
+2018-10-11 15:03:15,449 INFO  [Log] 4. Selecciona fecha de fin: Pass 
+2018-10-11 15:03:15,929 INFO  [Log] 5. Selecciona pasajero: Pass 
+2018-10-11 15:03:28,157 INFO  [Log] 6. Click en cotizar: Pass 
+2018-10-11 15:03:28,426 INFO  [Log] 7. Ingresa a Products: Pass 
+2018-10-11 15:03:28,573 INFO  [Log] 8. Selecciona un producto: Pass 
+2018-10-11 15:03:28,573 INFO  [Log] 9. Ingresa a Product: Pass 
+2018-10-11 15:03:31,697 INFO  [Log] 10. Selecciona un AddOn: Pass 
+2018-10-11 15:03:31,843 INFO  [Log] 11. Click en siguiente: Pass 
+2018-10-11 15:03:31,843 INFO  [Log] 12. Ingresa a Passengers: Pass 
+2018-10-11 15:03:36,477 INFO  [Log] 13. Carga los datos: Pass 
+2018-10-11 15:03:36,478 INFO  [Log] 14. Click en comprar: Pass 
+2018-10-11 15:03:36,478 INFO  [Log] End test: pruebaEnACCom
+ 
+2018-10-11 15:46:45,628 INFO  [Log] Start test: pruebaEnServer01 
+2018-10-11 15:46:45,629 INFO  [Log] 1. Ingresa al sitio: Pass 
+2018-10-11 15:46:45,910 INFO  [Log] 2. Selecciona destino: Pass 
+2018-10-11 15:46:46,552 INFO  [Log] 3. Selecciona fecha de inicio: Pass 
+2018-10-11 15:46:47,176 INFO  [Log] 4. Selecciona fecha de fin: Pass 
+2018-10-11 15:46:47,724 INFO  [Log] 5. Selecciona pasajero: Pass 
+2018-10-11 15:47:01,193 INFO  [Log] 6. Click en cotizar: Pass 
+2018-10-11 15:47:01,469 INFO  [Log] 7. Ingresa a Products: Pass 
+2018-10-11 15:47:01,624 INFO  [Log] 8. Selecciona un producto: Pass 
+2018-10-11 15:47:01,627 INFO  [Log] 9. Ingresa a Product: Pass 
+2018-10-11 15:47:07,744 INFO  [Log] 10. Selecciona un AddOn: Pass 
+2018-10-11 15:47:07,872 INFO  [Log] 11. Click en siguiente: Pass 
+2018-10-11 15:47:07,873 INFO  [Log] 12. Ingresa a Passengers: Pass 
+2018-10-11 15:47:12,507 INFO  [Log] 13. Carga los datos: Pass 
+2018-10-11 15:47:12,507 INFO  [Log] 14. Click en comprar: Pass 
+2018-10-11 15:47:12,507 INFO  [Log] End test: pruebaEnServer01
+ 
+2018-10-11 15:47:22,038 INFO  [Log] Start test: pruebaEnACCom 
+2018-10-11 15:47:22,038 INFO  [Log] 1. Ingresa al sitio: Pass 
+2018-10-11 15:47:22,288 INFO  [Log] 2. Selecciona destino: Pass 
+2018-10-11 15:47:22,898 INFO  [Log] 3. Selecciona fecha de inicio: Pass 
+2018-10-11 15:47:23,593 INFO  [Log] 4. Selecciona fecha de fin: Pass 
+2018-10-11 15:47:24,088 INFO  [Log] 5. Selecciona pasajero: Pass 
+2018-10-11 15:47:37,332 INFO  [Log] 6. Click en cotizar: Pass 
+2018-10-11 15:47:37,614 INFO  [Log] 7. Ingresa a Products: Pass 
+2018-10-11 15:47:37,753 INFO  [Log] 8. Selecciona un producto: Pass 
+2018-10-11 15:47:37,754 INFO  [Log] 9. Ingresa a Product: Pass 
+2018-10-11 15:47:41,648 INFO  [Log] 10. Selecciona un AddOn: Pass 
+2018-10-11 15:47:41,810 INFO  [Log] 11. Click en siguiente: Pass 
+2018-10-11 15:47:41,810 INFO  [Log] 12. Ingresa a Passengers: Pass 
+2018-10-11 15:47:47,385 INFO  [Log] 13. Carga los datos: Pass 
+2018-10-11 15:47:47,386 INFO  [Log] 14. Click en comprar: Pass 
+2018-10-11 15:47:47,386 INFO  [Log] End test: pruebaEnACCom
+ 

@@ -28,4 +28,8 @@ public class DataSetter {
         }
     
     }
+    
+    public static void closeConfiguration() {
+        configuration = null;
+    }
 }

@@ -8,11 +8,12 @@
     <sut04>http://172.31.1.160:8081</sut04>
     <sut05>http://172.31.1.163:8081</sut05>
     <isReportXlms>False</isReportXlms>
-    <isReportPdf>False</isReportPdf>
+    <isReportPdf>true</isReportPdf>
     <isSuite>False</isSuite>
     <chromeDriverPath>C:\Users\franco.garcia\Documents\GitHub\Automation\Framework\src\Driver\chromedriver.exe</chromeDriverPath>
     <log4ConfiguratorPath>C:\Users\franco.garcia\Documents\GitHub\Automation\Framework\src\log4j.xml</log4ConfiguratorPath>
     <isLog>True</isLog>
     <isEmailDelivery>False</isEmailDelivery>
-    <deliveryPath></deliveryPath>
+    <deliveryPath>C:\Users\franco.garcia\Documents\GitHub\Automation\Framework\src\main\java\Delivery\EmailSenderConfiguration.xml</deliveryPath>
+    <reportPath>C:\Users\franco.garcia\Documents\GitHub\Automation\Framework\src\main\java\Report\JReportAdvancedConfiguration.xml</reportPath>
 </configuration>

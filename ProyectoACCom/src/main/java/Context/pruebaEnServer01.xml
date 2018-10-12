@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objects>
+    <adulto>
+        <anio>anio</anio>
+        <apellido>apellido</apellido>
+        <dia>dia</dia>
+        <email>email</email>
+        <mes>mes</mes>
+        <nombre>nombre</nombre>
+        <telefono>telefono</telefono>
+    </adulto>
+    <asignada>FrancoGB</asignada>
+    <estado></estado>
+    <nombreDeLaPrueba></nombreDeLaPrueba>
+    <pasos>
+        <entry>
+            <key>13. Carga los datos</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>1. Ingresa al sitio</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>14. Click en comprar</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>2. Selecciona destino</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>3. Selecciona fecha de inicio</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>
+</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>7. Ingresa a Products</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>10. Selecciona un AddOn</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>11. Click en siguiente</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>9. Ingresa a Product</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>8. Selecciona un producto</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>5. Selecciona pasajero</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>12. Ingresa a Passengers</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>4. Selecciona fecha de fin</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>6. Click en cotizar</key>
+            <value>Pass</value>
+        </entry>
+    </pasos>
+    <prioridad>alta</prioridad>
+    <referencia>ACI1234</referencia>
+    <sprint>1</sprint>
+    <tiempoFinal></tiempoFinal>
+    <tiempoInicio>1539283596</tiempoInicio>
+    <tipoDePrueba>funcional</tipoDePrueba>
+    <version>1.0</version>
+</objects>

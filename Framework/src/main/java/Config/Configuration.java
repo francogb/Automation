@@ -30,11 +30,12 @@ public class Configuration {
     private String isLog;
     private String isEmailDelivery;
     private String deliveryPath;
+    private String reportPath;
 
     public Configuration() {
     }
 
-    public Configuration(String browser, String sut, String sut01, String sut02, String sut03, String sut04, String sut05, String isReportXlms, String isReportPdf, String isSuite, String chromeDriverPath, String log4ConfiguratorPath, String isLog, String isEmailDelivery, String deliveryPath) {
+    public Configuration(String browser, String sut, String sut01, String sut02, String sut03, String sut04, String sut05, String isReportXlms, String isReportPdf, String isSuite, String chromeDriverPath, String log4ConfiguratorPath, String isLog, String isEmailDelivery, String deliveryPath, String reportPath) {
         this.browser = browser;
         this.sut = sut;
         this.sut01 = sut01;
@@ -50,10 +51,19 @@ public class Configuration {
         this.isLog = isLog;
         this.isEmailDelivery = isEmailDelivery;
         this.deliveryPath = deliveryPath;
+        this.reportPath = reportPath;
     }
 
     public String getSut01() {
         return sut01;
+    }
+
+    public String getReportPath() {
+        return reportPath;
+    }
+    @XmlElement
+    public void setReportPath(String reportPath) {
+        this.reportPath = reportPath;
     }
 
     @XmlElement

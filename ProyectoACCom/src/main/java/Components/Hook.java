@@ -7,6 +7,7 @@ package Components;
 
 import Initializer.InitializerHook;
 import static Initializer.InitializerHook.openConfiguration;
+import static Log.Log.closeLogger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -22,7 +23,9 @@ public class Hook extends InitializerHook{
     @BeforeClass
     public static void setUpClass(){
         openConfiguration();
+        openDelivery();
         openLogger();
+        openReport();
     }
     
     @Before
@@ -39,7 +42,10 @@ public class Hook extends InitializerHook{
     
     @AfterClass
     public static void tearDownClass(){
-        
+        closeReport();
+        closeDelivery();
+        closeLogger();
+        closeConfiguration();
     }
     
     @Rule

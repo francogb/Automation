@@ -10,11 +10,14 @@ import Base.DriverContext;
 import static Base.DriverContext.getDriver;
 import Config.DataSetter;
 import static Config.DataSetter.getConfiguration;
+import Delivery.EmailSender;
+import static Delivery.EmailSender.sendEmail;
 import Helpers.XMLHelper;
 import static Helpers.XMLHelper.guardarXml;
 import static Helpers.XMLHelper.leerXml;
 import Log.Log;
 import static Log.Log.initializedLogger;
+import Report.ReportConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -39,7 +42,7 @@ public class InitializerHook extends Base {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-extensions");
-                WebDriver driver = new ChromeDriver();
+                WebDriver driver = new ChromeDriver(options);
                 DriverContext.setDriver(driver);
                 break;
             }
@@ -54,10 +57,19 @@ public class InitializerHook extends Base {
     public static void closeBrowser(){
         getDriver().close();
         getDriver().quit();
+        
     }
     
     public static void openLogger(){
         initializedLogger();
+    }
+    
+    public static void closeLogger() {
+        Log.closeLogger();
+    }
+    
+    public static void closeConfiguration() {
+        DataSetter.closeConfiguration();
     }
     
     public static void openConfiguration(){
@@ -72,4 +84,18 @@ public class InitializerHook extends Base {
         guardarXml(testName);
     }
     
+    public static void openDelivery(){
+        EmailSender.initializeEmailDeliveryConfiguration();
+    }
+    public static void closeDelivery() {
+        sendEmail();
+    }
+    
+    public static void openReport() {
+        ReportConfiguration.getReportConfig();
+    }
+
+    public static void closeReport() {
+        Report.Report.generatePdfReport();
+    }
 }
