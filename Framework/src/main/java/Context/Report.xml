@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportConfiguration>
+    <path></path>
+    <testContentExecuteBy></testContentExecuteBy>
+    <testContentObjetiveDescription></testContentObjetiveDescription>
+    <testContentTestDescription></testContentTestDescription>
+    <testContentTitle></testContentTitle>
+    <titleAddAutor></titleAddAutor>
+    <titleAddCreator></titleAddCreator>
+    <titleAddKeyWords></titleAddKeyWords>
+    <titleAddSubject></titleAddSubject>
+    <titleAddTitle></titleAddTitle>
+    <titleIntroDetails></titleIntroDetails>
+    <titleReportBy></titleReportBy>
+    <titleSecondDetails></titleSecondDetails>
+    <titleThirdDetails></titleThirdDetails>
+    <titleThirdTitle></titleThirdTitle>
+    <titleTitle></titleTitle>
+</reportConfiguration>

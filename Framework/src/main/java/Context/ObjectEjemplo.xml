@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objects>
+    <adulto>
+        <anio>anio</anio>
+        <apellido>apellido</apellido>
+        <dia>dia</dia>
+        <email>email</email>
+        <mes>mes</mes>
+        <nombre>nombre</nombre>
+        <telefono>telefono</telefono>
+    </adulto>
+    <asignada>FrancoGB</asignada>
+    <estado></estado>
+    <nombreDeLaPrueba>Prueba en Servers</nombreDeLaPrueba>
+    <pasos>
+        <entry>
+            <key>Seleccionar Producto</key>
+            <value>Pass</value>
+        </entry>
+        <entry>
+            <key>Cotizar</key>
+            <value>Pass</value>
+        </entry>
+    </pasos>
+    <prioridad>alta</prioridad>
+    <referencia>ACI1234</referencia>
+    <sprint>1</sprint>
+    <tiempoFinal></tiempoFinal>
+    <tiempoInicio></tiempoInicio>
+    <tipoDePrueba>funcional</tipoDePrueba>
+    <version>1.0</version>
+</objects>
